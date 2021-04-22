@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        let i = 0;
+        let u = "|_";
+        let a = "|_";
+        while(i<9){
+            console.log(u);
+            u=u+a;
+            i++;
+        }
+
+        let box="";
+        for (i=0; i<8;i++){
+            for(j=0; j<8;j++){
+                if((i+j) % 2 == 0){
+                    box+="\u2B1C"
+                } else{
+                    box+="\u2B1B"
+                }
+            }
+            box+="\n";
+        }
+        console.log(box)
+    </script>
+</body>
+</html>

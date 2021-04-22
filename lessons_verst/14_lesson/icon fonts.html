@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../fonts_14/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+        margin:0px; 
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #ebebeb;
+        min-width: 320px;
+        }
+
+        h1{
+        margin-block-start: 0.6em;
+        margin-block-end: 0.6em;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 40px;
+        }
+
+        .container{
+        max-width: 1200px;
+        height: auto; 
+        margin: auto;
+        margin-top: 10px;
+        position: relative; 
+        }
+
+        .container_title{
+        max-width: 600px;
+        height: auto; 
+        margin: auto;
+        margin-top: 10px;
+        position: relative; 
+        text-align: center;
+        }
+
+        .container_block{
+        width: 49%; 
+        height: auto;
+        float: left;
+        }
+
+        @media (max-width: 890px){
+        .container_block{
+        width: 98%; 
+        float: none;
+        }}
+        
+        .block{
+        width: 49%;
+        height: auto;
+        float: left;
+        margin: 0.5%;
+        }
+
+        @media (max-width: 500px){
+        .block{
+        width: 98%;
+        height: auto;
+        float: none;
+        margin: 0.5%;
+        margin-bottom: 6px;
+        }}
+
+        button{
+        display: block;
+        position: relative;
+        height: 50px;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        background-color: #ffa700;
+        border: none;
+        border-radius: 5px;
+        box-shadow:  0 2px 0 gray;
+        }
+
+        button:hover{
+        opacity: 0.8;
+        }
+
+
+        button:active {
+        top: .1em;
+        left: .1em;
+        box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+        }
+
+        button::before{
+        content: ""; 
+        position: absolute;
+        display: block;
+        height: 48px;
+        width: 50px;
+        padding: 0%;
+        margin: 0%;
+        background-color: #424242;
+        border: solid 1px #424242;
+        border-radius: 5px 0px 0px 5px;
+        }
+
+        a{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: left;
+        font-size: 15px;
+        }
+
+        p{
+        margin-block-start: 4px;
+        margin-block-end: 2px;
+        font-size: 17px;
+        font-weight: bold;
+        padding-left: 60px;
+        }
+
+        span:first-child::before{
+        color: white;
+        position: absolute;
+        font-size: 36px;
+        left: 7px;
+        top: 6px;
+        }
+
+        span:last-child{
+            padding-left: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container_title">
+            <h1>КНОПКИ С ИСПОЛЬЗОВАНИЕМ ИКОНИЧЕСКИХ ШРИФТОВ</h1>
+        </div>
+        <div class="container_block">
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-facebook2"></span><p>Facebook</p><span>Посетить Facebook</span></a> 
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-twitter"></span><p>Twitter</p><span>Посетить Twitter</span></a>
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-windows8"></span><p>Windows 8</p><span>Microsoft Windows 8</span></a>
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-github"></span><p>Github</p><span>Посетить Github</span></a>
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-rss"></span><p>RSS</p><span>Подпишитесь по RSS</span></a>
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-cogs"></span><p>Настройки</p><span>Перейти к настройкам</span></a>
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-skype"></span><p>Skype</p><span>Позвонить по Skype</span></a>
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-IE"></span><p>Explorer 10</p><span>Установить IE 10</span></a>
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-opera"></span><p>Opera</p><span>Установить Opera</span></a>
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-safari"></span><p>Safari</p><span>Установить Safari</span></a>
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-film"></span><p>Видеозаписи</p><span>Просмотреть видео</span></a>
+                </button>
+            </div>
+
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-images"></span><p>Галерея</p><span>Просмотреть галерею</span></a>
+                </button>
+            </div>
+        </div>
+
+        <div class="container_block">
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-google"></span><p>Google</p><span>Посетить Google</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-pinterest2"></span><p>Pinterest</p><span>Посетить Pinterest</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-css3"></span><p>CSS3</p><span>Взгляните на CSS3</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-html-five2"></span><p>HTML5</p><span>Узрите HTML5</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-home3"></span><p>Главная</p><span>На главную страницу</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-download2"></span><p>Скачать</p><span>Размер:32.4кб</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-chrome"></span><p>Google Chrome</p><span>Установить Chrome</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-firefox"></span><p>Mozilla Firefox</p><span>Установить Firefox</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-steam2"></span><p>Steam клиент</p><span>Установить Steam</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-appleinc"></span><p>Apple</p><span>Перейти на сайт</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-music"></span><p>Аудиозаписи</p><span>Прослушать аудио</span></a>
+                </button>
+            </div>
+            <div class="block">
+                <button>
+                    <a href="#"><span class="icon-user"></span><p>Профиль</p><span>Перейти в профиль</span></a>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

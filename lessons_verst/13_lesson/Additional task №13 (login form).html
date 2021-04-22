@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+            margin:0px; 
+            background-image: url('../0_Images/back.jpg'); 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        p{
+            text-align: center; 
+            margin-block-start: 10px
+        }
+
+        .container{
+            width: 440px; 
+            height: 290px; 
+            background-color: white; 
+            margin: auto; 
+            margin-top: 100px; 
+            position: relative; 
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+
+        .container_sticker{
+            width: 340px; 
+            height: 30px; 
+            background-color: black; 
+            opacity: 0.2; 
+            margin: auto;  
+            position: absolute; 
+            top:-15px; 
+            left: 50px;
+        }
+
+        .container_line{
+            border-bottom: 1px solid black; 
+            height: 60px; 
+            width: 340px; 
+            margin: auto;
+        }
+
+        .container_title{
+            height: 40px; 
+            width: 240px; 
+            margin: auto; 
+            position: absolute; 
+            top:40px; 
+            left: 100px; 
+            background-color: white;
+        }
+
+        h3{
+            text-align: center; 
+            margin-top: 10px; 
+            font-size: 22px;
+        }
+
+        .container_form{
+            width: 400px; 
+            height: 140px; 
+            background-color: #ff7f68; 
+            border-radius: 10px; 
+            margin: auto; 
+            margin-top: 30px; 
+            padding-top: 20px; 
+            position: relative;
+        }
+
+        .login{
+            display: block; 
+            width: 290px; 
+            height: 45px; 
+            margin: auto; 
+            border-radius: 5px; 
+            background-color: #ffd6cf; 
+            border: 1px solid #ffd6cf; 
+            padding-left: 10px;
+        }
+
+        .login:focus{
+            outline: none; 
+            background-color: white; 
+            border: 1px white solid; 
+        }
+
+        .password{
+            display: block; 
+            width: 290px; 
+            height: 45px; 
+            margin: auto; 
+            border-radius: 5px; 
+            margin-top: 3px; 
+            background-color: #ffd6cf; 
+            border: 1px solid #ffd6cf; 
+            padding-left: 10px;
+        }
+
+        .password:focus{
+            outline: none; 
+            background-color: white; 
+            border: 1px white solid; 
+        }
+
+        button{
+            width: 70px; 
+            height: 70px; 
+            border-radius: 70px; 
+            border: solid 5px #ff7f68; 
+            background-color: #ff5232; 
+            position: absolute; 
+            top:38px; 
+            left: 310px;
+        }
+
+        button::before{
+            content: "\27F6";
+            color: white;
+            font-size: 25px;
+        }
+
+        button:hover{
+            background-color: #f82803;
+        }
+
+        button:focus{
+            outline: none;  
+            border: solid 5px rgb(255, 255, 126); 
+            background-color: rgb(255, 255, 126);
+        }
+
+        button:active{
+            outline: none;  
+            border: solid 5px #ff7f68; 
+            background-color: rgb(255, 255, 126);
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="container_sticker"></div>
+
+        <div class="container_line"></div>
+
+        <div class="container_title"><h3>АВТОРИЗИРУЙТЕСЬ</h3></div>
+
+        <div class="container_form">
+            <form>
+
+            <div>
+                <input id="login" name="login" type="text" required placeholder="Логин" class="login">
+            </div> 
+
+            <div>
+                <input id="password" name="password" type="password" required placeholder="Пароль" class="password">
+            </div>
+
+            <button></button> 
+
+            <div>
+                <p>Забыли пароль или логин? <a href="https://www.youtube.com/" title="ютуб" target=_blank >Напомним!</a></p>
+            </div>
+
+        </form>
+        </div>
+    </div>
+</body>
+</html>

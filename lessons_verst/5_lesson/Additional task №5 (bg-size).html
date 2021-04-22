@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+      .container{
+        margin: 20px auto; 
+        background: black url(https://github.com/novikilya47/Verst/raw/main/photo-11.webp) 0 0 no-repeat;
+        border:crimson 5px solid; 
+        width: 40%; 
+        height: 500px; 
+        text-align: center;
+      }
+
+      .contain{
+        background-size: contain;   
+      }
+
+      .cover{
+        background-size: cover;
+      }
+
+      .auto{
+        background-size: auto;  
+      }
+
+      p{
+        color: white;
+      }
+  </style>
+ </head>
+ <body>
+     
+    <div class="container contain">
+        <p>background-size: contain - Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока.</p>
+    </div>
+    <div class="container cover">
+        <p>background-size: cover - Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.</p>
+    </div>
+    <div class="container auto">
+        <p>background-size: auto - Значение по умолчанию. Фоновое изображение отображается в исходном размере</p>
+    </div>
+</body>
+</html>

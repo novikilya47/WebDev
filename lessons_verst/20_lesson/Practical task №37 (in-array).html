@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        a{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        }
+
+        p {
+            margin-block-start: 0.5em;
+        }
+
+        .block{
+            width: 50%;
+            display: flex;
+            justify-content: space-around; 
+            margin: 100px auto;
+        }
+
+        .button_1{
+        display: block;
+        position: relative;
+        height: 50px;
+        width: 100px;
+        margin: auto;
+        background-color: coral;
+        border: none;
+        border-radius: 5px;
+        }
+
+        .button_1:hover{
+        opacity: 0.5;
+        }
+
+        .button_1:active {
+        top: .1em;
+        left: .1em;
+        box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <button class="button_1" onclick="Fruit()">
+            <a href="#"><p>Создать массив</p></a> 
+        </button>
+        <button class="button_1" onclick="Delete()">
+            <a href="#"><p>Удалить массив</p></a> 
+        </button>
+        <button class="button_1" onclick="Check()">
+            <a href="#"><p>Проверить в массиве</p></a> 
+        </button>
+        <button class="button_1" onclick="Write()">
+            <a href="#"><p>Показать массив</p></a> 
+        </button>
+    </div>
+    </div>
+
+
+    <script>
+    let arr = [];
+    let arr_index =[];
+    let a = "";
+    let b = "";
+    function Fruit(){
+        for(var i=0; i<5; i++){
+            a=prompt("Введите свой любимый фрукт");
+            arr.push(a);
+        }
+        return arr;
+    }
+    
+    function Delete(){
+        arr=[];
+        alert('Массив удален');
+        return arr;
+    }
+
+    function Check(){
+        b = prompt("Введите фрукт");
+        if (arr.includes(b)){
+            arr.forEach((element, index) => {
+                if(b===element){
+                    arr_index.push(index)
+                }})
+           alert("Индекс(ы) искомого элемента: " + arr_index);
+           arr_index=[]; 
+        } else{
+            arr.push(b);
+            alert("Фрукт добавлен");
+        }
+        return arr;
+    }
+
+    function Write(){
+        alert (arr);
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+        margin:0px; 
+        font-family: 'Montserrat', sans-serif;
+        background-color: white;
+        min-width: 320px;
+        font-weight: bolder;
+        }
+
+        .container{
+        max-width: 700px;
+        height: auto; 
+        margin: auto;
+        margin-top: 50px;
+        position: relative; 
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        padding-bottom: 3%;
+        padding-top: 3%;
+        }
+
+        .block{
+        width: 80%;
+        height: 15px;
+        margin: auto;
+        margin-bottom: 3%;
+        margin-top: 3px;
+        border: black solid 1px;
+        border-radius: 8px;
+        padding: 1px;
+        }
+
+        span{
+            padding-left: 10%;
+        }
+
+        .block_1{
+        height: 85%;
+        width: 3%;
+        margin: 0px;
+        border: #feb749 solid 1px;
+        background-color:#feb749;
+        border-radius: 8px;
+        animation: back_1 3s 1 linear;
+        animation-delay:1s;
+        animation-fill-mode:forwards;
+        }
+
+        @keyframes back_1 {
+        from { width: 3%;}
+        to { width: 75%;}
+        }
+
+        .block_2{
+        height: 85%;
+        width: 3%;
+        margin: 0px;
+        border: #9675cf solid 1px;
+        background-color:#9675cf;
+        border-radius: 8px;
+        animation: back_2 3s 1 linear;
+        animation-delay:1s;
+        animation-fill-mode:forwards;
+        }
+
+        @keyframes back_2 {
+        from { width: 3%;}
+        to { width: 65%;}
+        }
+
+        .block_3{
+        height: 85%;
+        margin: 0px;
+        width: 3%;
+        border: #f2514e solid 1px;
+        background-color:#f2514e;
+        border-radius: 8px;
+        animation: back_3 3s 1 linear;
+        animation-delay:1s;
+        animation-fill-mode:forwards;
+        }
+
+        @keyframes back_3 {
+        from { width: 3%;}
+        to { width: 55%;}
+        }
+
+        .block_4{
+        height: 85%;
+        margin: 0px;
+        width: 3%;
+        border: #64bc69 solid 1px;
+        background-color:#64bc69;
+        border-radius: 8px;
+        animation: back_4 3s 1 linear;
+        animation-delay:1s;
+        animation-fill-mode:forwards;
+        }
+
+        @keyframes back_4 {
+        from { width: 3%;}
+        to { width: 45%;}
+        }
+        p{
+            margin-left: 10%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Мои знания:</p>
+        <span>HTML</span>
+        <div class="block">
+            <div class="block_1"></div>
+        </div>
+        <span>CSS</span>
+        <div class="block">
+            <div class="block_2"></div>
+        </div>
+        <span>JS</span>
+        <div class="block">
+            <div class="block_3"></div>
+        </div>
+        <span>QJ</span>
+        <div class="block">
+            <div class="block_4"></div>
+        </div>
+    </div>
+</body>
+</html>

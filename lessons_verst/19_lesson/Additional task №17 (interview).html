@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        let name_1 = prompt("Введите Ваше имя");
+        let name_2 = prompt("Введите Вашу фамилию");
+        let name_3 = prompt("Введите Ваше отчество");
+        let old = parseInt(prompt("Сколько вам лет?"));
+        let old_days = old*365;
+        let sex = confirm("Ваш пол - мужской?")
+
+        if(sex==true){
+            sex = "мужской"
+        } else{
+            sex="женский"
+        }
+
+        let adult=""
+        if(old>18||old==18){
+            adult ="Вы уже совершеннолетний"
+        } else{
+            adult ="Вы еще несовершеннолетний"
+        }
+
+        let senior =""
+        if(old>60){
+            senior ="да"
+        } else{
+            senior ="нет"
+        }
+
+        alert("Ваше ФИО: "+ name_1 +" " + name_2 +" " + name_3 +
+        "\nВаш возраст в годах: " + old +
+        "\nВаш возраст в днях: " + old_days +
+        "\n" + adult +
+        "\nВаш пол: " +sex+
+        "\nВы на пенсии: " + senior)
+
+    </script>
+</body>
+</html>

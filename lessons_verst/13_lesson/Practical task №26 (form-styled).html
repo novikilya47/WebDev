@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+        background-color: #818181; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: smaller;
+        }
+
+        h2{
+            padding-left: 20px;
+        }
+        
+        .container{
+            width: 500px; 
+            margin: auto; 
+            background-color: #719af8; 
+            border-radius: 5px; 
+            padding: 3px;
+        }
+
+        .title{
+            color: white; 
+            text-align: center;
+        }
+
+        .container_form{
+            background-color: white; 
+            border-radius: 0px 0px 5px 5px; 
+            color: #6d6e72" 
+        }
+
+        form{
+            padding: 3%; 
+        }
+
+        .fields{
+            width: 91%;
+            min-height: 30px;
+            border: 1px grey solid; 
+            border-radius: 5px;
+            padding-left:8%;
+            margin-right: 3%;
+        }
+
+        .mod .modi_2{
+            padding-left: 13%;
+        }
+
+        .human::before{
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: url('../0_Images/cel.png');
+            position: absolute;
+            left: 6px;
+            top: 5px;
+        }
+
+        .phone::before{
+            content: '';
+            width: 14px;
+            height: 24px;
+            background: url('../0_Images/tel.png');
+            position: absolute;
+            left: 11px;
+            top: 5px;
+        }
+
+        .letter::before{
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: url('../0_Images/letter.png');
+            position: absolute;
+            left: 6px;
+            top: 5px;
+        }
+
+        .house::before{
+            content: '';
+            width: 28px;
+            height: 28px;
+            background: url('../0_Images/house.png');
+            position: absolute;
+            left: 146px;
+            top: -3px;
+        }
+
+        .pen::before{
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: url('../0_Images/pen.png');
+            position: absolute;
+            left: 6px;
+            top: 5px;
+        }
+
+        .fields:focus{
+            outline: none; 
+            border: 1px #719af8 solid; 
+        }
+
+        .field_text{
+            width: 91%;
+            max-width: 91%;
+            min-width: 91%;
+            min-height: 90px;
+            max-height: 200px;
+            border: 1px grey solid; 
+            border-radius: 5px;
+            padding-left:8%;
+            padding-top:2%;
+        }
+
+        .field_text:focus{
+            outline: none; 
+            border: 1px #719af8 solid; 
+        }
+
+        .submit_button:focus{
+            outline: none; 
+            border: 1px red solid; 
+        }
+
+        .mod label{
+            display: inline-block;
+            width: 20%;     
+        }
+
+        .mod .modi{
+            display: inline-block;
+            width: 60%;
+            margin-right: 17%;
+            
+        }
+
+        .external{
+            margin-bottom: 3%;
+        }
+
+        .internal{
+            margin-top: 1%;
+            position: relative; 
+            
+        }
+
+        .submit_cont{
+            text-align: center; 
+            min-height: 30px;
+        }
+
+        .submit_button{
+            width: 40%; 
+            height: 100%; 
+            min-height: 30px; 
+            color: white; 
+            background-color:#719af8; 
+            border:#719af8 1px solid; 
+            border-radius: 3px;
+        }
+
+        label{
+            padding-left: 2%;
+            color: gray;
+            font-weight: bold;
+        }
+
+        textarea{
+            color: gray;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input{
+            color: gray;
+            font-weight: bold;
+        }
+
+        .container_title{
+        position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="container_title">
+        <span class="house"></span><h2 class="title">Обратная связь</h1>
+        </div>
+
+        <div class="container_form">
+
+            <form class=mod>
+                <div class="external">
+                    <label for="name" >Имя:</label>
+                    <div class="modi internal">
+                        <span class="human"></span><input class="fields modi_2" id="name" name="name" type="text" required placeholder="Введите Ваше имя">
+                    </div>
+                </div> 
+
+                <div class="external">
+                    <label for="email">Email:</label>
+                    <div class="modi internal">
+                        <span class="letter"></span><input class="fields modi_2" id="email" name="email" type="text" required placeholder="Введите адрес Вашей почты">
+                    </div>
+                </div> 
+
+                <div class="external">
+                    <label for="phone">Телефон:</label>
+                    <div class="modi internal">
+                        <span class="phone"></span><input class="fields modi_2" id="phone" name="phone" type="tel" required placeholder="Введите номер телефона" >
+                    </div>
+                </div> 
+
+                <div class="external">
+                    <label for="textarea">Сообщение:</label>
+                    <div class="internal">
+                        <span class="pen"></span><textarea class="field_text" id="textarea" placeholder="Текст сообщения"></textarea>
+                    </div>
+                </div> 
+
+                <div class="submit_cont">
+                    <input type="button" value="Отправить" class="submit_button" >
+                </div>   
+            </form>
+        </div>
+    </div>
+</body>
+</html>

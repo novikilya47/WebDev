@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        a{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        }
+
+        p {
+            margin-block-start: 0.5em;
+        }
+
+        .block{
+            width: 50%;
+            display: flex;
+            justify-content: space-around; 
+            margin: 100px auto;
+        }
+
+        .button_1{
+        display: block;
+        position: relative;
+        height: 70px;
+        width: 100px;
+        margin: auto;
+        background-color: coral;
+        border: none;
+        border-radius: 5px;
+        }
+
+        .button_1:hover{
+        opacity: 0.5;
+        }
+
+        .button_1:active {
+        top: .1em;
+        left: .1em;
+        box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <button class="button_1" onclick="add()">
+            <a href="#"><p>Ввод информации о стране</p></a> 
+        </button>
+        <button class="button_1" onclick="info()">
+            <a href="#"><p>Получение информации о стране</p></a> 
+        </button>
+        <button class="button_1" onclick="list()">
+            <a href="#"><p>Перечень всех стран</p></a> 
+        </button>
+        <button class="button_1" onclick="del()">
+            <a href="#"><p>Удаление информации о стране</p></a> 
+        </button>
+    </div>
+    </div>
+
+
+    <script>
+    var countries = {}; 
+
+    function addСountry(countryName, capitalName) {
+      countries[countryName] = capitalName;
+    }
+
+    function getcountryInfo(countryName) {
+      if ( countryName in countries ) {
+          return ("cтрана: " + countryName + ", cтолица: " + countries[countryName]);
+      }
+      return ("нет информации о cтране " + countryName + "!");
+    }
+
+    function listСountries() {
+        var result = "";
+        for ( var key in countries ) {
+            result += "\n" + getcountryInfo(key);
+        }
+    return result;
+    }
+
+    function deleteСountry(countryName) {
+      delete countries[countryName];
+    }
+
+    function add() {
+      let countryName = prompt('Название страны');
+      let capitalName = prompt('Столица страны');
+      addСountry(countryName, capitalName);
+      return countries;
+    }
+
+    function info() {
+      let countryName = prompt('Название страны');
+      console.log(getcountryInfo(countryName));
+    }
+
+    function list() {
+      console.log(listСountries());
+    }
+
+    function del() {
+      let countryName = prompt('Название страны');
+      if (countryName in countries) {
+        deleteСountry(countryName);
+      } 
+      return alert('В списке нет такой страны');
+    }
+    </script>
+</body>
+</html>

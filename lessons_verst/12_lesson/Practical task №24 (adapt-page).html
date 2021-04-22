@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+        margin: 0px; 
+        font-family: Arial, Helvetica, sans-serif;
+        min-width: 320px;
+        }
+
+        @media (max-width: 768px){
+        body{
+        font-size: smaller;
+        }
+        }
+
+        .img_container{
+        max-width: 980px;
+        height: auto; 
+        margin: auto; 
+        margin-bottom: 0px;
+        }
+
+        @media (max-width: 768px){
+        .img_container{
+        margin: 0% 2% ;
+        }}
+
+        img{
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        }
+
+        .heading{
+        background-color: #c3c3c3; 
+        text-align: center; 
+        padding: 1%; 
+        font-weight: bold
+        }
+
+        .content{
+        max-width: 980px; 
+        margin: auto;
+        padding: 2%;
+        }
+
+        .content_news_container{
+        height: 220px; 
+        margin:5% 0%;
+        }
+
+        @media (max-width: 768px){
+        .content_news_container{
+        height: auto;
+        margin: 0px; 
+        } 
+        }
+
+        .news{
+        width: 22.5%; 
+        height: auto;
+        margin-right: 3.3%;
+        margin-left: 0px;
+        float: left;
+        text-align: center;
+        background-color: #f8f8f8;
+        }
+
+        @media (max-width: 768px){
+        .news{
+        width: 100%; 
+        height: auto; 
+        margin-right: 0%;
+        text-align: center;
+        background-color: #f8f8f8;
+        float: none;
+        } 
+        }
+
+        .last{
+        margin-right: 0px;
+        float: right;
+        }
+
+        @media (max-width: 768px){
+        .last{ 
+        float: none;
+        } 
+        }
+
+        .news_title{
+        font-weight: bold; 
+        height: 15%; 
+        margin-top: 8%; 
+        margin-bottom: 0%;
+        }
+
+        @media (max-width: 768px){
+        .news_title{ 
+        height: 20px; 
+        padding-top: 2%;
+        margin-top: 5%;
+        } 
+        }
+
+        .news_content{
+        height: auto; 
+        margin-top: 2%; 
+        padding: 2%;
+        }
+
+        @media (max-width: 768px){
+        .news_content{
+        height: auto; 
+        } 
+        }
+
+        .news_button_container{
+        height: 60px; 
+        display: table; 
+        width: 100%;
+        }
+
+        @media (max-width: 768px){
+        .news_button_container{
+        height: 50px; 
+        margin: 3% 0% 0%;
+        } 
+        }
+
+        .news_button{
+        display: table-cell;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none; 
+        color: white;
+        height: 100%;
+        background-color: #68a5c5;
+        font-weight: bold;
+        }
+
+        .text{
+        margin-top: 5%;
+        } 
+
+        .footer_container{
+        height: 50px; 
+        background-color: #68a5c5; 
+        color:white;
+        }
+
+        .footer_horisontal_center{
+        height: 100%; 
+        max-width: 980px; 
+        margin: auto; 
+        }
+
+        @media (max-width: 1036px){
+        .footer_horisontal_center{
+        padding-left: 2%;
+        } 
+        }
+
+        .footer_vertical_center{
+        display: table; 
+        height: 100%; 
+        width: 100%; 
+        }
+
+        .footer{
+        display: table-cell; 
+        vertical-align: middle;   
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img_container"><img src="../0_Images/sb.jpg" alt="image"></div>
+    <div class="heading"><h1>Заголовок первого уровня</h1></div>
+    <div class="content">
+        <div class="content_news_container">
+            <div class="news">
+                <p class="news_title">Новость 1</p>
+                <p class="news_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="news_button_container"><a class="news_button" href="#" title="ссылка на ютуб" >Читать далее</a></div>
+            </div>
+
+            <div class="news">
+                <p class="news_title">Новость 2</p>
+                <p class="news_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="news_button_container"><a class="news_button" href="#" title="ссылка на ютуб" >Читать далее</a></div>
+            </div>
+
+            <div class="news">
+                <p class="news_title">Новость 3</p>
+                <p class="news_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="news_button_container"><a class="news_button" href="#" title="ссылка на ютуб" >Читать далее</a></div>
+            </div>
+
+            <div class="news last">
+                <p class="news_title">Новость 4</p>
+                <p class="news_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="news_button_container"><a class="news_button" href="#" title="ссылка на ютуб" >Читать далее</a></div>
+            </div>
+        </div>
+
+        <div class="text">
+            <h2>What is Lorem Ipsum?</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        
+            <h2>Why do we use it?</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            
+            <h2>Where does it come from?</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+        
+            <h2>Where can I get some?</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+        </div>
+    </div>
+
+    <div class="footer_container">
+        <div class="footer_horisontal_center">
+            <div class="footer_vertical_center">
+                <div class="footer">
+                    &copy; Копирайт 2017
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

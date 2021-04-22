@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+
+        body {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;}
+  
+        ul { 
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin: 20px 0px;
+        }
+        
+        .first_element {
+        display: inline-block;
+        position: relative;
+        }
+
+        .other_element{
+        display: inline-block;
+        position: relative;
+        }
+
+        .other_element::before{
+        content: '';
+        display: block;
+        position: absolute;
+        border-bottom: #cdcdcd 2px solid;
+        width: 65px;
+        left: -5px;
+        height: 20px;
+        z-index: -1;
+        }
+
+        .step_first{
+        display: block;
+        text-decoration: none; 
+        color: black;
+        height: 100%;
+        background-color: #cdcdcd;
+        border: #cdcdcd solid 2px;
+        padding: 7px 13px;
+        border-radius: 100px;
+        }
+        
+        .step {
+        display: block;
+        text-decoration: none; 
+        color: black;
+        height: 100%;
+        background-color: #cdcdcd;
+        border: #cdcdcd solid 2px;
+        padding: 7px 13px;
+        border-radius: 100px;
+        margin-left: 30px;
+        }
+
+        .step_active{
+        color: white;
+        background-color: #ac499d; 
+        }
+
+        .step_passed{
+        color: white;
+        background-color: #bedf35; 
+        }
+
+    </style>
+</head>
+<body>
+    <ul>  
+        <li class="first_element"><a href="#" title="ссылка на ютуб" class="step_first step_passed">1</a></li>
+        <li class="other_element"><a href="#" title="ссылка на ютуб" class="step step_passed">2</a></li>
+        <li class="other_element"><a href="#" title="ссылка на ютуб" class="step step_passed">3</a></li>
+        <li class="other_element"><a href="#" title="ссылка на ютуб" class="step step_active">4</a></li>
+        <li class="other_element"><a href="#" title="ссылка на ютуб" class="step">5</a></li>
+        <li class="other_element"><a href="#" title="ссылка на ютуб" class="step">6</a></li>
+        <li class="other_element"><a href="#" title="ссылка на ютуб" class="step">7</a></li>
+        <li class="other_element"><a href="#" title="ссылка на ютуб" class="step">8</a></li> 
+        <li class="other_element"><a href="#" title="ссылка на ютуб" class="step step_passed">9</a></li>
+    </ul>    
+</body>
+</html>

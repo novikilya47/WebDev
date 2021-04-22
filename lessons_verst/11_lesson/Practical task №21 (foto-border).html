@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+    .border_1{
+        margin: auto;
+        border: rgb(126, 214, 126) 5px solid;
+        height: 149px;
+        width: 198px;
+        box-shadow: 5px 5px green, 10px 10px rgb(1, 83, 1);
+    }
+    .border_2{
+        margin: auto;  
+        height: 149px;
+        width: 198px;
+        position: relative;
+        border: rgb(126, 214, 126) 5px solid;
+    }  
+    .border_2::before{
+        content: "";
+        display: block;
+        border: rgb(1, 83, 1) 5px solid;
+        height: 149px;
+        width: 198px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: -2;
+    }
+    .border_2::after{
+        content: "";
+        display: block;
+        border: green 5px solid;
+        height: 149px;
+        width: 198px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+  </style>
+ </head>
+ <body>
+
+<div class="border_2"><img src="../0_Images/train.jpg" alt="example image"></div>
+
+</body>
+</html>

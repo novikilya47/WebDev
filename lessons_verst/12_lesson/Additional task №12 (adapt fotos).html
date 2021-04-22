@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+        min-width: 320px;
+        }
+
+        .container{
+        max-width: 1200px;
+        height: auto; 
+        margin: auto; 
+        }
+        
+        .img_container{
+        width: 32%;
+        height: auto; 
+        padding: 1.5% 1% 0% 0%;
+        float: left;
+        }
+
+        @media (max-width: 768px){
+        .img_container{
+        width: 49%;
+        } 
+        }
+
+        @media (max-width: 480px){
+        .img_container{
+        width: 99%;
+        max-width: 359px;
+        margin: auto;
+        float: none;
+        } 
+        }
+
+        img{
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        }
+
+        .clearfix{
+        clear: both;
+        }
+
+        @media (max-width: 768px){
+        .clearfix{
+        clear: none;
+        }
+        }
+
+        @media (max-width: 768px){
+        .clearfix_2{
+        clear: both;
+        }
+        }
+
+        @media (max-width: 480px){
+        .clearfix_2{
+        clear: none;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img_container"><img src="../0_Images/12.jpg" alt="logo" title="logo" ></div>
+        <div class="img_container" ><img src="../0_Images/11.jpg" alt="logo" title="logo" ></div>
+        <div class="clearfix_2"></div>
+        <div class="img_container"><img src="../0_Images/12.jpg" alt="logo" title="logo" ></div>  
+        <div class="clearfix"></div>
+    </div>
+    <div class="container">
+        <div class="img_container"><img src="../0_Images/13.jpg" alt="logo" title="logo"></div>
+        <div class="clearfix_2"></div>
+        <div class="img_container"><img src="../0_Images/14.jpg" alt="logo" title="logo"></div>
+        <div class="img_container"><img src="../0_Images/15.jpg" alt="logo" title="logo"></div>
+        <div class="clearfix"></div>
+        <div class="clearfix_2"></div>
+    </div>
+    <div class="container">
+        <div class="img_container"><img src="../0_Images/16.jpg" alt="logo" title="logo"></div>
+        <div class="img_container"><img src="../0_Images/17.jpg" alt="logo" title="logo"></div>
+        <div class="clearfix_2"></div>
+        <div class="img_container"><img src="../0_Images/18.jpg" alt="logo" title="logo"></div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>

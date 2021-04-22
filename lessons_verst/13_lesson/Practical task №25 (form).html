@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        div{
+            margin-bottom: 10px;
+        }
+
+        .buttons{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+   <div>
+    <form>
+        <fieldset>
+        <legend>Анкета нового пользователя</legend>
+
+        <div>
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" required>
+        </div> 
+
+        <div>
+            <label for="sec_name">Фамилия:</label>
+            <input id="sec_name" name="sec_name" type="text" required>
+        </div> 
+
+        <div>
+            <label for="sex">Укажите пол:</label>
+            <input id="sex_m" name="sex" type="radio" value="man" required>
+            <label for="sex_m">мужской</label>
+            <input id="sex_w" name="sex" type="radio" value="women" required>
+            <label for="sex_w">женский</label>
+        </div> 
+
+        <div>
+            <label for="country">Страна проживания:</label>
+            <select id="country" name="country" required>
+            <option value="1">Беларусь</option>
+            <option value="2">Россия</option>
+            <option value="3">Украина</option>
+            </select>
+        </div> 
+
+        <div>
+            <label for="lang">Владение языками:</label>
+            <input id="lang_1" name="lang" type="checkbox" value="Rus" required>
+            <label for="lang_1">русский</label>
+            <input id="lang_2" name="lang" type="checkbox" value="Bel" required>
+            <label for="lang_2">белорусский</label>
+            <input id="lang_3" name="lang" type="checkbox" value="Ing" required>
+            <label for="lang_3">английский</label>
+        </div>
+        
+        <div>
+            <label for="photo">Фото профиля:</label>
+            <input id="photo" name="photo" type="file" value="photo" required>
+        </div>
+
+        <div>
+            <label for="login">Введите логин:</label>
+            <input id="login" name="login" type="text" required>
+        </div> 
+
+        <div>
+            <label for="email">Введите email:</label>
+            <input id="email" name="email" type="text" required>
+        </div> 
+
+        <div>
+            <label for="password">Введите пароль:</label>
+            <input id="password" name="password" type="password" required>
+        </div> 
+
+        <div>
+            <label for="password_2">Повторите пароль:</label>
+            <input id="password_2" name="password_2" type="password" required>
+        </div> 
+
+        <div>
+            <hr>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" disabled>
+            <input type="reset" value="Отменить">
+        </div> 
+    </form>  
+   </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+
+        let end=0;
+        while (end!=1){
+            let first_number = parseFloat(prompt("Введите первое число"));
+            if(result=null){
+                end=1;
+            }
+            let second_number = parseFloat(prompt("Введите второе число"));
+            let first_number_even="";
+            let second_number_even="";
+            let first_number_integer="";
+            let second_number_integer="";
+            let first_number_plus="";
+            let second_number_plus="";
+            let result="";
+
+            if ((isNaN(first_number))&&(isNaN(second_number))){
+                alert("Переменные не являются числами, введите их заново");
+            }else if((isNaN(first_number))||(isNaN(second_number))){
+                alert("Одна из переменных не является числом, введите переменные заново");
+            }else{
+                if (first_number % 2 == 0) {
+                    first_number_even="четное, ";
+                }else{
+                    first_number_even="нечетное, ";
+                } 
+
+                if (second_number % 2 == 0) {
+                    second_number_even="четное, ";
+                }else{
+                    second_number_even="нечетное, ";
+                } 
+
+                if (Number.isInteger(first_number)){
+                    first_number_integer="целое, ";
+                }else{
+                    first_number_integer="дробное, ";
+                } 
+
+                if (Number.isInteger(second_number)){
+                    second_number_integer="целое, ";
+                }else{
+                    second_number_integer="дробное, ";
+                } 
+
+                if (first_number>0){
+                    first_number_plus="положительное, ";
+                }else{
+                    first_number_plus="отрицательное, ";
+                } 
+
+                if (second_number>0){
+                    second_number_plus="положительное, ";
+                }else{
+                    second_number_plus="отрицательное, ";
+                } 
+
+                if (first_number>second_number){
+                    result="Первое число больше второго";
+                } else if (first_number<second_number){
+                    result="Первое число меньше второго";
+                } else{result="Числа равны"}
+
+                console.log("Первое число: "+first_number_even + first_number_integer + first_number_plus +
+                "\nВторое число: " + second_number_even + second_number_integer + second_number_plus + "\n" + result)              
+                end=1;
+            }
+        }
+    </script>
+</body>
+</html>

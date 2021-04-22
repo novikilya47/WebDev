@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+        margin:0px; 
+        min-width: 320px;
+        }
+
+        .header{
+            display: flex; 
+            background-color: blue;
+        }
+
+        @media(max-width:760px){
+            .header{
+            flex-direction: column;
+        }}  
+
+        .header_logo{
+            width:12.5%; 
+            background-color: grey ; 
+            padding: 10px; 
+            text-align: center;
+        }
+
+        @media(max-width:760px){
+            .header_logo{
+            margin: auto;
+        }}
+
+        @media(max-width:375px){
+            .header_logo{
+            width: 33%; 
+        }} 
+
+        .header_menu{
+            width:87.5%;  
+            display: flex; 
+            justify-content: flex-end;
+        }
+
+        @media(max-width:760px){
+            .header_menu{
+            width: 100%;
+        }}
+
+        @media(max-width:375px){
+            .header_menu{
+            flex-wrap: wrap;   
+        }} 
+
+        .menu{
+            width: 13%; 
+            text-align: center;
+        }
+
+        @media(max-width:760px){
+            .menu{
+            width: 25%; 
+        }}
+
+        @media(max-width:375px){
+            .menu{
+            width: 100%; 
+        }} 
+
+        .content{
+            display: flex;
+        }
+
+        @media(max-width:760px){
+        .content{
+            flex-wrap: wrap;
+        }}
+
+        .content_left{
+            width: 25%; 
+            background-color: yellow; 
+            text-align: center; 
+            padding: 10px;
+        }
+
+        @media(max-width:760px){
+        .content_left{
+            width: calc(50% - 20px);
+        }}
+
+        @media(max-width:375px){
+            .content_left{
+            width: 100%;
+        }}
+
+        .content_center{
+            width: 50%; 
+            background-color: cyan; 
+            padding: 10px;
+        }
+
+        @media(max-width:760px){
+        .content_center{
+            width: 100%; 
+            order: -1;
+        }}
+
+        .content_right{
+            width: 25%; 
+            background-color: magenta; 
+            text-align: center;
+            padding: 10px; 
+        }
+
+        @media(max-width:760px){
+        .content_right{
+            width:calc(50% - 20px);
+        }}
+
+        @media(max-width:375px){
+            .content_right{
+            width: 100%;
+        }}
+
+        .footer{
+            display: flex; 
+            background-color: green;
+        }
+
+        @media(max-width:760px){
+            .footer{
+            flex-wrap: wrap;
+        }}
+
+        .footer_copy{
+            width: 20% ; text-align: center; padding: 10px;
+        }
+
+        @media(max-width:760px){
+            .footer_copy{
+            width: 100%;
+        }}
+
+        .footer_info{
+            width: 80% ; display: flex; justify-content: flex-end;
+        }
+
+         @media(max-width:760px){
+            .footer_info{
+            width: 100%; 
+        }}
+
+        @media(max-width:375px){
+            .footer_info{
+            width: 100%;
+            flex-wrap: wrap; 
+        }}
+
+        .info{
+            width: 13%;text-align: center;
+        }
+
+        @media(max-width:760px){
+            .info{
+            width: calc(100%/3);
+        }}
+
+        @media(max-width:375px){
+            .info{
+            width: 100%;
+        }}
+
+        a{
+            text-decoration: none; 
+            display: block;
+            height: calc(100% - 20px);
+            width: calc(100% - 20px);
+            color: white;
+            padding: 10px;  
+            font-weight: bold;       
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_logo">Logo</div>
+        <div class="header_menu">
+            <div class="menu"><a href="#">Главная</a></div>
+            <div class="menu"><a href="#">О нас</a></div>
+            <div class="menu"><a href="#">Продукты</a></div>
+            <div class="menu"><a href="#">Контакты</a></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content_left">Acide type 1</div>
+        <div class="content_center">
+            <h2>What is Lorem Ipsum?</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        
+            <h2>Why do we use it?</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+        <div class="content_right">Acide type 2</div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_copy">&copy; Copyright 2021</div>
+        <div class="footer_info">
+            <div class="info"><a href="#">Twitter</a></div>
+            <div class="info"><a href="#">Vkontakte</a></div>
+            <div class="info"><a href="#">Facebook</a></div>
+        </div>
+    </div>
+</html>
